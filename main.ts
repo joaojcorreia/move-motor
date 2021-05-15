@@ -1,4 +1,4 @@
-Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Forward, 60)
+Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Forward, 40)
 basic.forever(function () {
     if (Kitronik_Move_Motor.measure() >= 5) {
         basic.showLeds(`
@@ -8,7 +8,7 @@ basic.forever(function () {
             # . . . #
             . # # # .
             `)
-        Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Forward, 60)
+        Kitronik_Move_Motor.move(Kitronik_Move_Motor.DriveDirections.Forward, 40)
     } else {
         Kitronik_Move_Motor.stop()
         basic.showLeds(`
